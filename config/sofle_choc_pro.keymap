@@ -54,7 +54,7 @@ combos {
       sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
     };
 
-//Pfeiltasten aus encoders machen!
+//Pfeiltasten aus encoders machen!!
 
     lower_layer {
       display-name = "lower";
