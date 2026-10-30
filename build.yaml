@@ -7,16 +7,16 @@
 #
 ---
 include:
-  - board: corne_choc_pro_left
-    snippet: studio-rpc-usb-uart
-    shield: sharp_mip
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: corne_choc_pro_bt_left
-  - board: corne_choc_pro_right
-    shield: sharp_mip
-    snippet: studio-rpc-usb-uart
-    artifact-name: corne_choc_pro_bt_right
-
+ # - board: corne_choc_pro_left
+ #   snippet: studio-rpc-usb-uart
+ #   shield: sharp_mip
+ #   cmake-args: -DCONFIG_ZMK_STUDIO=y
+ #   artifact-name: corne_choc_pro_bt_left
+ # - board: corne_choc_pro_right
+ #   shield: sharp_mip
+ #   snippet: studio-rpc-usb-uart
+ #   artifact-name: corne_choc_pro_bt_right
+ 
   # - board: corne_choc_pro_5col_left
   #   snippet: studio-rpc-usb-uart
   #   shield: sharp_mip
@@ -27,12 +27,12 @@ include:
   #   snippet: studio-rpc-usb-uart
   #   artifact-name: corne_choc_pro_bt_5col_right
 
-  - board: corne_choc_pro_left
-    shield: settings_reset
-    snippet: studio-rpc-usb-uart
-  - board: corne_choc_pro_right
-    shield: settings_reset
-    snippet: studio-rpc-usb-uart
+ # - board: corne_choc_pro_left
+ #   shield: settings_reset
+ #   snippet: studio-rpc-usb-uart
+ # - board: corne_choc_pro_right
+ #   shield: settings_reset
+ #   snippet: studio-rpc-usb-uart
 
   # - board: piantor_pro_bt_left
   #   snippet: studio-rpc-usb-uart
@@ -61,28 +61,28 @@ include:
   #   shield: settings_reset
   #   snippet: studio-rpc-usb-uart
 
-  # - board: sofle_choc_pro_left
-  #   snippet: studio-rpc-usb-uart
-  #   shield: sharp_mip
-  #   cmake-args: -DCONFIG_ZMK_STUDIO=y
-  #   artifact-name: sofle_choc_pro_bt_left
-  # - board: sofle_choc_pro_right
-  #   shield: sharp_mip
-  #   snippet: studio-rpc-usb-uart
-  #   artifact-name: sofle_choc_pro_bt_right
+- board: sofle_choc_pro_left
+  snippet: studio-rpc-usb-uart
+  shield: sharp_mip
+  cmake-args: -DCONFIG_ZMK_STUDIO=y
+  artifact-name: sofle_choc_pro_bt_left
+- board: sofle_choc_pro_right
+  shield: sharp_mip
+  snippet: studio-rpc-usb-uart
+  artifact-name: sofle_choc_pro_bt_right
 
-  # - board: sofle_choc_pro_left
-  #   shield: settings_reset
-  #   snippet: studio-rpc-usb-uart
-  # - board: sofle_choc_pro_right
-  #   shield: settings_reset
-  #   snippet: studio-rpc-usb-uart
+- board: sofle_choc_pro_left
+  shield: settings_reset
+  snippet: studio-rpc-usb-uart
+- board: sofle_choc_pro_right
+  shield: settings_reset
+  snippet: studio-rpc-usb-uart
 
-  - board: crosses_v2_left
-    artifact-name: crosses_v2_36_left
-  - board: crosses_v2_right
-    artifact-name: crosses_v2_36_right
+ # - board: crosses_v2_left
+ #   artifact-name: crosses_v2_36_left
+ # - board: crosses_v2_right
+ #   artifact-name: crosses_v2_36_right
  
-  - board: crosses_v2_right
-    artifact-name: crosses_v2_settings_reset
-    shield: settings_reset
+ # - board: crosses_v2_right
+ #   artifact-name: crosses_v2_settings_reset
+ #   shield: settings_reset
