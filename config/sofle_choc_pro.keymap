@@ -35,9 +35,9 @@
       //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
       bindings = <
         &kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp DE_SZ
-        &kp ESC   &kp Q  &kp W    &kp E    &kp R     &kp T                            &kp Z  &kp U     &kp I     &kp O    &kp P    &kp DE_U_UMLAUT
-        &kp TAB   &kp A  &kp S    &kp D    &kp F     &kp G                            &kp H  &kp J     &kp K     &kp L    &kp DE_O_UMLAUT &kp DE_A_UMLAUT
-        &kp LSHFT &kp Y  &kp X    &kp C    &kp V     &kp B   &kp C_MUTE &kp C_PLAY    &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &kp ESC   &kp DE_Q  &kp DE_W    &kp DE_E    &kp DE_R     &kp DE_T                            &kp DE_Z  &kp DE_U     &kp DE_I     &kp DE_O    &kp DE_P    &kp DE_U_UMLAUT
+        &kp TAB   &kp DE_A  &kp DE_S    &kp DE_D    &kp DE_F     &kp DE_G                            &kp DE_H  &kp DE_DE_J     &kp DE_K     &kp DE_L    &kp DE_O_UMLAUT &kp DE_A_UMLAUT
+        &kp LSHFT &kp DE_Y  &kp DE_X    &kp DE_C    &kp DE_V     &kp DE_B   &kp C_MUTE &kp C_PLAY    &kp DE_N  &kp DE_M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &kp LGUI &kp LALT &kp LCTRL &mo 1  &kp RET    &kp SPACE  &mo 2  &kp RCTRL &kp RALT  &kp RGUI
       >;
 
