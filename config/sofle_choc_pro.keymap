@@ -56,14 +56,14 @@ combos {
       // ------------------------------------------------------------------------------------------------------------
       // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   ß   |
       // |   ^   |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   Ü   |
-      // |   +   |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   Ö   |   Ä   |
-      // | LESST |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  | PLAY  |  N   |  M    |  ,    |  .   |   -   |   #   |
+      // |   + * |  A  |  S  |  D   |  F   |  G   |                   |  H ! |  J ?  |  K (  |  L ) |   Ö   |   Ä   |
+      // |  <  > |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  | PLAY  |  N   |  M    |  , ;  |  . : |   -   |   #   |
       //               | CAP | ESC  | CTRL | SPACE| ALT_GR |  | BCKSP | SHIFT|  DEL  | RAISE |LOWER |
       bindings = <
         &kp DE_GRAVE &kp DE_N1 &kp DE_N2   &kp DE_N3   &kp DE_N4    &kp DE_N5                           &kp DE_N6 &kp DE_N7    &kp DE_N8    &kp DE_N9   &kp DE_N0   &kp DE_SZ
         &kp DE_CARET   &kp DE_Q  &kp DE_W    &kp DE_E    &kp DE_R     &kp DE_T                            &kp DE_Z  &kp DE_U     &kp DE_I     &kp DE_O    &kp DE_P    &kp DE_U_UMLAUT
-        &kp DE_PLUS &kp DE_A  &kp DE_S    &kp DE_D    &kp DE_F     &kp DE_G                            &kp DE_H  &kp DE_J     &kp DE_K     &kp DE_L    &kp DE_O_UMLAUT &kp DE_A_UMLAUT
-        &kp DE_LT &kp DE_Y  &kp DE_X    &kp DE_C    &kp DE_V     &kp DE_B   &kp C_MUTE &kp C_PLAY    &kp DE_N  &kp DE_M     &sym_ht DE_SEMI DE_COMMA &sym_ht DE_COLON DE_DOT  &kp DE_MINUS &kp DE_POUND
+        &sym_ht DE_ASTRK DE_PLUS &kp DE_A  &kp DE_S    &kp DE_D    &kp DE_F     &kp DE_G                            &sym_ht DE_EXCL DE_H  &sym_ht DE_QMARK DE_J     &sym_ht DE_LPAR DE_K     &sym_ht DE_RPAR DE_L    &kp DE_O_UMLAUT &kp DE_A_UMLAUT
+        &sym_ht DE_GT DE_LT &kp DE_Y  &kp DE_X    &kp DE_C    &kp DE_V     &kp DE_B   &kp C_MUTE &kp C_PLAY    &kp DE_N  &kp DE_M     &sym_ht DE_SEMI DE_COMMA &sym_ht DE_COLON DE_DOT  &kp DE_MINUS &kp DE_POUND
         &kp CLCK &kp ESC &kp LCTRL &kp SPACE  &kp RALT    &kp BSPC  &kp LSFT  &kp DEL &mo 2  &mo 1
       >;
 
