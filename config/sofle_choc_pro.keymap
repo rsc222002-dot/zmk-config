@@ -22,6 +22,10 @@
     };
   };
 
+//hier kommt Behaviors-Block für Tap-Dance rein
+
+//Blockende von Tapdance Behavior
+
 combos {
         compatible = "zmk,combos";
 
@@ -79,16 +83,16 @@ combos {
       display-name = "raise";
       // ------------------------------------------------------------------------------------------------------------
       // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-      // |       | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
-      // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-      // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
-      //                |      |       |       |      |      |  |      |      |      |       |      |
+      // |       |      |      | GUI   |       |      |                |      |      |   ^   |      |       |       |
+      // |       |      |      |       |       |      |                | PGUP |   <- |   v   |  ->  |       |       |
+      // |       |      |      |       |       |  \   |      |  |      | PGDN |      |       |      |       |       |
+      //                |      |       |    {  |  }   |   $  |  |      |      |      |       |      |
       bindings = <
         &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &trans    &trans    &trans   &trans    &trans  &trans
-        &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                        &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
-        &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                      &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
-        &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &studio_unlock        &trans  &trans  &trans    &trans    &trans   &trans    &trans  &trans
-        &trans       &trans       &trans       &trans        &trans  &trans  &trans    &trans    &trans   &trans
+        &trans     &trans       &trans       &kp K_CMENU  &trans       &trans                        &trans    &trans    &kp UP   &trans    &trans  &trans
+        &trans     &trans       &trans       &trans       &trans       &trans                        &kp PG_UP &kp LEFT  &kp DOWN &kp RIGHT &trans  &trans
+        &trans     &trans       &trans       &trans       &trans       &kp DE_BSLH  &studio_unlock       &trans  &kp PG_DN    &trans    &trans   &trans    &trans  &trans
+        &trans       &trans       &kp DE_LBRC       &kp DE_RBRC        &kp DE_DOLLAR  &trans  &trans    &trans    &trans   &trans
       >;
 
       sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
