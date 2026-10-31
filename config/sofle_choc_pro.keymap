@@ -22,8 +22,20 @@
     };
   };
 
-//hier kommt Behaviors-Block für Tap-Dance rein
+//hier kommt Behaviors-Block für hold-tap rein
+behaviors {
 
+    sym_ht: symbol_hold_tap {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+
+        flavor = "balanced";
+        tapping-term-ms = <200>;
+
+        bindings = <&kp>, <&kp>;
+    };
+
+};
 //Blockende von Tapdance Behavior
 
 combos {
@@ -51,7 +63,7 @@ combos {
         &kp DE_GRAVE &kp DE_N1 &kp DE_N2   &kp DE_N3   &kp DE_N4    &kp DE_N5                           &kp DE_N6 &kp DE_N7    &kp DE_N8    &kp DE_N9   &kp DE_N0   &kp DE_SZ
         &kp DE_CARET   &kp DE_Q  &kp DE_W    &kp DE_E    &kp DE_R     &kp DE_T                            &kp DE_Z  &kp DE_U     &kp DE_I     &kp DE_O    &kp DE_P    &kp DE_U_UMLAUT
         &kp DE_PLUS &kp DE_A  &kp DE_S    &kp DE_D    &kp DE_F     &kp DE_G                            &kp DE_H  &kp DE_J     &kp DE_K     &kp DE_L    &kp DE_O_UMLAUT &kp DE_A_UMLAUT
-        &kp DE_LT &kp DE_Y  &kp DE_X    &kp DE_C    &kp DE_V     &kp DE_B   &kp C_MUTE &kp C_PLAY    &kp DE_N  &kp DE_M     &kp DE_COMMA &kp DE_DOT  &kp DE_MINUS &kp DE_POUND
+        &kp DE_LT &kp DE_Y  &kp DE_X    &kp DE_C    &kp DE_V     &kp DE_B   &kp C_MUTE &kp C_PLAY    &kp DE_N  &kp DE_M     &sym_ht DE_SEMI DE_COMMA &sym_ht DE_COLON DE_DOT  &kp DE_MINUS &kp DE_POUND
         &kp CLCK &kp ESC &kp LCTRL &kp SPACE  &kp RALT    &kp BSPC  &kp LSFT  &kp DEL &mo 2  &mo 1
       >;
 
