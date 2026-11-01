@@ -10,6 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/pointing.h>
 #include "keys_de.h"
 
 / {
@@ -64,7 +65,7 @@ combos {
         &sym_ht DE_GRAVE DE_ACUTE &sym_ht DE_EXCL  DE_N1 &sym_ht DE_DQT   DE_N2   &sym_ht DE_SECT  DE_N3   &sym_ht DE_DLLR  DE_N4    &sym_ht DE_PRCNT DE_N5                           &sym_ht DE_AMPS  DE_N6  &sym_ht DE_FSLH  DE_N7    &sym_ht DE_LPAR  DE_N8    &sym_ht DE_RPAR  DE_N9   &sym_ht DE_EQUAL DE_N0   &sym_ht DE_QMARK DE_SZ
         &sym_ht DE_DEG DE_CARET   &kp DE_Q  &kp DE_W    &kp DE_E    &kp DE_R     &kp DE_T                            &kp DE_Z  &kp DE_U     &kp DE_I     &kp DE_O    &kp DE_P    &kp DE_U_UMLAUT
         &sym_ht DE_ASTRK DE_PLUS &kp DE_A  &sym_ht DE_SZ DE_S    &kp DE_D    &kp DE_F     &kp DE_G                            &sym_ht DE_EXCL DE_H  &sym_ht DE_QMARK DE_J     &sym_ht DE_LPAR DE_K     &sym_ht DE_RPAR DE_L    &kp DE_O_UMLAUT &kp DE_A_UMLAUT
-        &sym_ht DE_GT DE_LT &kp DE_Y  &kp DE_X    &kp DE_C    &kp DE_V     &kp DE_B   &mkp 1 &mkp 2    &kp DE_N  &kp DE_M     &sym_ht DE_SEMI DE_COMMA &sym_ht DE_COLON DE_DOT  &kp DE_MINUS &sym_ht DE_SQT DE_POUND
+        &sym_ht DE_GT DE_LT &kp DE_Y  &kp DE_X    &kp DE_C    &kp DE_V     &kp DE_B   &mkp LCLK &mkp RCLK    &kp DE_N  &kp DE_M     &sym_ht DE_SEMI DE_COMMA &sym_ht DE_COLON DE_DOT  &kp DE_MINUS &sym_ht DE_SQT DE_POUND
         &kp CLCK &kp ESC &kp LCTRL &kp SPACE  &kp RALT    &kp BSPC  &kp LSFT  &kp DEL &mo 2  &mo 1
       >;
 // DE Grave zu ht wechseln über de acute - wie genau?
