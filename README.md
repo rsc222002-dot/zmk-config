@@ -10,4 +10,4 @@ rake build
 
 rake flash
 
-For German layout put #include <dt-bindings/zmk/keys.h> into the keymap code in behaviors, replace needed keys with German Definition, example: &kp N intolerant &kp DE_N
+For German layout put #include <dt-bindings/zmk/keys.h> into the keymap code in behaviors, replace needed keys with German definition, example: &kp N into &kp DE_N
