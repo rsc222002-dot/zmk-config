@@ -10,6 +10,4 @@ rake build
 
 rake flash
 
-For German layout put #include <dt-bindings/zmk/keys.h> into the keymap code in behaviors
-For placing mouse movement on keys/rotary encoders put #include <dt-bindings/zmk/pointing.h> in behaviors
-in both of those files the names for the individual keys are defined.
+For German layout put #include <dt-bindings/zmk/keys.h> into the keymap code in behaviors, replace needed keys with German Definition, example: &kp N intolerant &kp DE_N
